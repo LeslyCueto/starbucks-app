@@ -1,0 +1,450 @@
+:root {
+    --color-primario: #006241; 
+    --color-secundario: #D4ED31; 
+    --color-circulos: #9EEB47; 
+    --color-contact:#09aa00;
+    --color-hover-btn:#b1c624;
+    --font1:'Poppins', sans-serif;
+  }
+
+*{
+    font-family: var(--font1);   
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;   
+}
+
+.header{
+    background: var(--color-primario);
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.74em 1.25em;
+    position: fixed;
+    box-shadow: 2px 8px 26px 0px rgba(0,0,0,0.75);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header__logo--img{
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.header__profile{
+    display: none;
+}
+
+.header__nav{
+    display: none;
+}
+
+.header__bars{
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+.header__a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.header__profile .header__profile--img{
+    font-size: 3.2rem;
+    color: whitesmoke;
+}
+.main{
+    width: 90%;
+    margin: 125px auto 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__content1{
+    padding-right: 5em;
+}
+
+.main__h1{
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height:1.2em; 
+}
+.main__span{
+    color: var(--color-primario);
+}
+.main__content1 .main__p{
+    font-weight: bolder;
+    font-size: 18px; 
+    margin-top: 1.5em;
+    line-height: 1.5em;
+}
+
+.main__content2 .main__img{
+    width: 20rem;
+    display: none;
+}
+.gallery{
+    background-color: var(--color-primario);
+    padding:2em 0;
+}
+.gallery__cnt{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 0 0 1.5em;
+    justify-content: space-evenly;
+}
+.gallery__img{
+    margin-top: 1.5em;
+}
+.form{
+    background: rgb(23, 23, 23);
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__tittle{
+    color: var(--color-primario);
+    font-size: 1.5rem;
+    margin-top: 2em;
+}
+
+.form__content{
+    background-color: var(--color-primario);
+    justify-content: left;
+    text-align: left;
+    padding: 20px 20px;
+    margin: 2em auto 4em auto;
+}
+
+.form__content .form__correo--label{
+    font-size: 22px;
+    color:aliceblue;
+}
+
+.form__content .form__correo--email{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width:100%;
+    height: 2.5em;
+}
+
+.form__content .form__correo--textarea{
+    border-radius: 10px;
+    height: 8em;
+    width: 100%;
+}
+
+.form__btns--send{
+    margin-top: 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 5px 80px;
+    background-color: var(--color-primario);
+    border-color: aliceblue;
+    color: aliceblue;
+}
+
+.form__btns--send:hover{
+    background-color: var(--color-hover-btn);
+    transition: 0.5s;
+}
+.tarjetas{
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjetas__card{
+    background-color: var(--color-primario);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1em auto;
+}
+
+.card__img{
+    width: 100%;
+}
+.card__text{
+    display: flex;
+    flex-direction: column;
+    padding: 9px 18px;
+}
+.card__h3, .card__p{
+    color: aliceblue;
+}
+.card__p{
+    font-size: 0.85rem;
+    margin-top: 0.85em;
+    margin-bottom: 0.85em;
+}
+.card__h3{
+    font-size: 30px;
+}
+.card__span{
+    color: var(--color-secundario);
+}
+.card__btn{
+    width: max-content;
+    padding: 0.5em 2em;
+    font-size: 0.75rem;
+    border-radius: 0.75em;
+    margin-right: 10px;
+    margin-bottom: 0.75em;
+    color: aliceblue;
+    background-color: inherit;
+    border: 2px solid aliceblue;
+}
+
+.card__btn:hover{
+    background-color: var(--color-hover-btn);
+    transition: 0.5s;
+}
+
+.cards__circle {
+	background: var(--color-secundario);
+	width: 2.5em;
+	height: 2.5em;
+	font-size: 1.35rem;
+	border-radius: 50%;
+	text-align: center;
+	position: absolute;
+	top: -25px;
+	right: -25px;
+	font-weight: bolder;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer{
+    background-color: black;
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+}
+.footer .footer__cnt1{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.footer .footer__cnt2{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__cnt3{
+    width: 90%;
+    margin: 0 auto;
+}
+.footer__cnt2 .footer__redes{
+    color: var(--color-primario);
+    font-size: 30px;
+}
+.footer__a{
+    text-decoration: none;
+    color: var(--color-primario);
+    font-size: 22px;
+    font-weight: bold;
+    margin: 3px;
+}
+.footer__contactanos{
+    text-decoration: none;
+    color: var(--color-contact);
+    font-size: 22px;
+    font-weight: normal;
+    margin: 3px;
+    
+}
+
+@media (min-width: 470px) {
+    .main__h1{
+        font-weight: bold;
+        font-size: 4.5rem;
+        line-height: 1.15em;
+    }
+    .main__p{
+        margin-top: 25px;
+        font-size: 1.15rem;
+    }
+
+    .form__content{
+        width: 50em;
+    }
+
+    .card_circle{
+        background-color: var(--color-secundario);
+        width: 3em;
+        height: 3em;
+        font-size: 1,5rem;
+        border-radius: 50%;
+        top: -25px;
+        right: -25px;
+    }
+
+    .footer .footer__cnt2{
+        margin-left: 35px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        width: 90%;
+    }
+
+    .footer__cnt2 .footer__redes{
+        margin-right: 10px;
+    }
+    
+    
+}
+
+@media (min-width: 768px) {
+    .header__nav{
+        display: block;
+    }
+    .header__logo{
+        display: block;
+    }
+    .header__a{
+        margin-left: 0.95em;
+    }
+
+    .header__profile{
+        display: block;
+    }
+
+    .header__bars{
+        display: none;
+    }
+    .header__profile--img{
+        font-size: 2.5rem;
+        display: block;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main__content2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__img{
+        width: 2px;
+        display: block !important; 
+        margin: 0 auto;
+    }
+
+    .main__h1{
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 1.15em;
+        margin-bottom:20px;
+    }
+    .main__p{
+        font-size: 1rem;
+    }
+    .gallery__cnt{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .gallery__img{
+        width: 30%;
+    }
+
+    .form__content{
+        width: 40em;
+    }
+    .tarjetas{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .tarjetas__card{
+        background-color: var(--color-primario);
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 1em auto;
+    }
+    .card__btn{
+        margin-bottom: 10px;
+    }
+
+    .contenido__footer{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 50px;
+    }
+    .footer__cnt2{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .footer__cnt3{
+        display: flex;
+        justify-content: end;
+    }
+
+    .footer__contactanos{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .footer__redes{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .main__h1{
+        width: 100%;
+    }
+    .main__p{
+        width: 100%;
+    }
+}
+
+@media (min-width: 960px){
+    .header__a{
+        margin-left: 1.15em;
+        font-size: 1.15rem;
+    }
+
+    .header__logo{
+        display: block;
+    }
+    .main__h1{
+        font-size: 4rem;
+    }
+
+    .card__btns{
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media (min-width:1024px) {
+    .footer{
+        padding: 5em 0;
+    }
+    .footer__redes{
+        margin-left: 0.85em;
+        font-size: 3em;
+    }
+}
